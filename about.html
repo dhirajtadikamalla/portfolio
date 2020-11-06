@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <link rel="stylesheet" type="text/css" href="html5reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dhiraj Tadikamalla</title>
+ </head>
+<body>
+    <header>
+        <ul class="nav_links">
+            <li class="nav_item1"><a href="index.html">Dhiraj Tadikamalla</a></li>
+            <li class="nav_item"><a href="pillminder.html">Pillminder</a></li>
+            <li class="nav_item"><a href="endocrinology.html">Endocrinology</a></li>
+            <li class="nav_item"><a class= "current" href="about.html">About</a></li>
+            <li class="nav_item"><a href="resume.html">Resume</a></li>
+          </ul>
+    </header>
+<main>
+    <div class="grid-container">
+        <br><br><div class="item1"><p1>Hey, I'm DJ</p1><br><br>
+            I’m Dhiraj, but most people call me DJ. I am a junior studying at the <p2>University of Michigan</p2> School of Information with a focus in <p3>User Experience Design</p3> and a <p4>minor in Biochemistry.</p4> I am currently actively seeking internships for this upcoming summer in UX design. <br><br>
+            
+            Coming from a medical background, I am driven by the curiosity to see the role of information in both nature and human endeavors. I still share the common denominator of helping the issues of people, just through a different medium. <br><br>
+            
+            After entering an iSchool, I have learned many things, but one in particular is that you really get out what you decide to put in. <br><br>
+            
+            <p5> Outside of design and medicine, you can find me spending time with my family and friends, playing soccer and volleyball, and trying to build the artistry of my cooking.</p5> <br><br>
+            
+            <p6>dtadikam@umich.edu <br><br>
+            
+              734-673-9412</p6></div>
+        <div class="item2"><img src= "imgs/about.jpg" alt= "about picture"></div> <br><br><br>
+</main>
+
+<footer>
+    <button class= "open-button" onclick= "openForm()" ondblclick="closeForm()">Let's Work Together!</button> <br> <br>
+    <div class= "form-popup" id = "myForm">
+      <form action="https://formspree.io/f/mgepyraz" method="POST" class= "form-container">
+          <h1>Let's Work Together!</h1><br>
+          <label for= "name"><b>Name</b></label><br>
+              <input type= "text" id= "name" placeholder= "Enter Full Name" name="name" required><br>
+          <label for= "number"><b>Phone Number</b></label><br>
+              <input type= "text" id= "number" placeholder= "Enter Phone Number" name="number"><br>
+          <label for= "Email"><b>Email</b></label><br>
+              <input type= "text" id= "Email" placeholder= "Enter Email" name="Email" required><br>
+          <label for= "Subject"><b>Subject</b></label><br>
+              <input type= "text" id= "Subject" placeholder= "Enter Subject" name="Subject" required><br>
+          <label for= "Message"><b>Message</b></label><br>
+              <input type= "text" id= "Message" placeholder= "Enter Message" name="Message" required><br>
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form> <b>
+    </div>
+
+  <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+  </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a aria-label= "LinkedIn" href="https://www.linkedin.com/in/dhiraj-tadikamalla-04040a1a4/" class="fa fa-linkedin"></a> 
+    <a aria-label= "Facebook" href="https://www.facebook.com/dhiraj.tadikamalla/" class="fa fa-facebook"></a>
+    <a aria-label= "Google" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Saying+Hello&to=dhirajtadikamalla@gmail.com" class="fa fa-google" style= "margin: 5px"></a>
+</footer>
+</body>
+</html>

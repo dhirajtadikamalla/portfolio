@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <link rel="stylesheet" type="text/css" href="html5reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dhiraj Tadikamalla</title>
+ </head>
+<body>
+    <header>
+        <ul class="nav_links">
+            <li class="nav_item1"><a href="index.html">Dhiraj Tadikamalla</a></li>
+            <li class="nav_item"><a class= "current" href="pillminder.html">Pillminder</a></li>
+            <li class="nav_item"><a href="endocrinology.html">Endocrinology</a></li>
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <li class="nav_item"><a  href="resume.html">Resume</a></li>
+          </ul>
+    </header>
+    <main class= "pill">
+        <br><p1>00 Background</p1><br><br>
+        <p2>Pillminder is one of my personal passion projects, and it was inspired from watching my grandma struggle taking pills that help fight her epilepsy. It is an app designed to help the elderly remember to take their pills on a daily basis. About 40% of medication-related deaths are related to poor adherence, and pillminder will ensure this number decreases. </p2><br><br>
+        <p1>01 Problem Statement</p1><br><br>
+        <p4>Older adults (60+) struggle with memory loss, which causes them to not follow medication plans. They need a mobile application that will help remind them, on a daily basis, to take a pill that will give them a 99% chance of survival from a disease. </p4><br><br>
+        <p1>02 Literature Review</p1><br><br>
+        <p6>To tackle such a diverse problem that affects the lives of millions, extensive research was completed. Knowing this, we completed a literature review with 16 sources, 4 research articles, and 12 news articles. </p6><br><br>
+        <img src= "imgs/Screen Shot 2020-10-13 at 3.08.55 PM.png" alt= "Lit Review Image" class= "center"> <br><br>
+        <p7>Some of the key takeways were:</p7><br><br>
+        <p8>
+          <ol>
+            <li>People age 65 and older make up 12% of the U.S. population, but account for 34% of all prescription medication use and 30% of all over-the-counter medication use.</li>
+            <li>Older adults rely on medication lists, pill boxes, family/friends, nurses, or staff to remember when to take pills.</li>
+            <li>The average elderly patient is taking more than five prescription medications; the average nursing home patient is taking seven medications.</li>
+            <li>Impaired memory, hearing, and vision loss can make it more difficult to understand and remember medicine instructions.</li>
+          </ol> 
+        </p8>
+        <br><p1>03 Wireframes</p1><br><br>
+        <p10>A set of wireframes were sketched before the final design, taking in all the research points into account. The sketch was built to keep the easiest UI possible, with reminders of each pill with its name, dosage, and frequency. </p10><br><br>
+        <p11 class= "center">
+            <img src= "imgs/Screen Shot 2020-10-13 at 3.53.40 PM.png" alt= "First Wireframe" class= "center"><br><br>
+            Setting Reminders <br><br>
+            <img src= "imgs/Screen Shot 2020-10-13 at 4.00.02 PM.png" alt= "Second Wireframe" class= "center"><br><br>
+            Viewing Reminders <br><br>
+            <img src= "imgs/Screen Shot 2020-10-13 at 4.00.57 PM.png" alt= " Third Wireframe" class= "center"> <br><br>
+            Viewing Completion Bar/Checklist <br><br>
+        </p11>
+        <p1>04 Hi-Fi Screens</p1><br><br>
+        <p13>After taking all the research and wire-framing into account, I was able to develop high-fidelity designs, with a focus on maintaining a clean and simple design. </p13><br><br>
+        <p14>Pill Box | Visual View of Daily Pills</p14><br><br>
+        <p15 class= "center">
+            <img src= "imgs/Screen Shot 2020-10-13 at 4.17.22 PM.png" alt= "First Hi-Fi" class= "center"><br><br>
+            Hi-Fi design of daily reminders of personal medication, including its name, dosage, and frequency <br><br>
+            Sketched with Illustrator <br><br>
+            <img src= "imgs/Screen Shot 2020-10-13 at 4.18.09 PM.png" alt= "Second Hi-Fi" class= "center"><br><br>
+            Hi-Fi design of a completion bar and checklist with a percentage of the pills taken <br><br>
+            Sketched with Illustrator <br><br>
+        </p15>
+        <p1>05 Reflection</p1><br><br>
+        <p17>This was a personal project of mine, as well as my first introduction to the UX field. I was introduced to the Pillminder idea after witnessing my grandma who takes several pills throughout the day. <br><br> This project has not only given me a head start as I complete my UX courses but also many skills that will fuel my passion to become a UX designer. </p17> <br><br>
+
+
+    </main>
+<footer>
+    <button class= "open-button" onclick= "openForm()" ondblclick="closeForm()">Let's Work Together!</button> <br> <br>
+    <div class= "form-popup" id = "myForm">
+      <form action="https://formspree.io/f/mgepyraz" method="POST" class= "form-container">
+          <h1>Let's Work Together!</h1><br>
+          <label for= "name"><b>Name</b></label><br>
+              <input type= "text" id= "name" placeholder= "Enter Full Name" name="name" required><br>
+          <label for= "number"><b>Phone Number</b></label><br>
+              <input type= "text" id= "number" placeholder= "Enter Phone Number" name="number"><br>
+          <label for= "Email"><b>Email</b></label><br>
+              <input type= "text" id= "Email" placeholder= "Enter Email" name="Email" required><br>
+          <label for= "Subject"><b>Subject</b></label><br>
+              <input type= "text" id= "Subject" placeholder= "Enter Subject" name="Subject" required><br>
+          <label for= "Message"><b>Message</b></label><br>
+              <input type= "text" id= "Message" placeholder= "Enter Message" name="Message" required><br>
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form> <b>
+    </div>
+
+  <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+  </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a aria-label= "LinkedIn" href="https://www.linkedin.com/in/dhiraj-tadikamalla-04040a1a4/" class="fa fa-linkedin"></a> 
+    <a aria-label= "Facebook" href="https://www.facebook.com/dhiraj.tadikamalla/" class="fa fa-facebook"></a>
+    <a aria-label= "Google" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Saying+Hello&to=dhirajtadikamalla@gmail.com" class="fa fa-google" style= "margin: 5px"></a>
+</footer>
+</body>
+</html>
