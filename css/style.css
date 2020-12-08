@@ -374,6 +374,10 @@ hr{
   .parallax img {
     text-indent: -9999px;
   }
+  
+   .parallax2 img {
+    text-indent: -9999px;
+  }
 
   .parallax2{
     background-image: url('https://minutes.co/wp-content/uploads/2019/06/research-and-scholarship.jpg');
