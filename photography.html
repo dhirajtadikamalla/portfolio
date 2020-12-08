@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/png" href="imgs/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Dhiraj Tadikamalla</title>
+ </head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <div class="main">
+      <nav class="navigation">
+         <ul>
+            <li><a class= "main_user" href="index.html">Dhiraj Tadikamalla</a></li>
+            <li class= "user"><a href="pillminder.html">Pillminder</i></a></li>
+            <li class= "user"><a href="endocrinology.html">Endocrinology</i></a></li>
+            <li class= "user"><a href="about.html">About</i></a></li>
+            <li class= "user"><a class= "current" href="photography.html">Photography</i></a></li>
+            <li class= "user"><a href="resume.html">Resume</i></a></li>
+         </ul> 
+      </nav>
+    </div>
+    
+    <!-- <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <ul class="nav_links">
+            <li class="nav_item1"><a href="index.html">Dhiraj Tadikamalla</a></li>
+            <li class="nav_item"><a href="pillminder.html">Pillminder</a></li>
+            <li class="nav_item"><a href="endocrinology.html">Endocrinology</a></li>
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <li class="nav_item"><a class= "current" href="photography.html">Photography</a></li>
+            <li class="nav_item"><a href="resume.html">Resume</a></li>
+          </ul>
+    </header> -->
+
+    <main id= "skip">
+        <br>
+        <div class= "container">
+            <div class = "gallery">
+                <figure class= "gallery__item gallery__item--1">
+                    <img src="imgs/image1.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="imgs/image2.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/image3.jpg" class="gallery__img" alt="Image 3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="imgs/image4.jpg" class="gallery__img" alt="Image 4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="imgs/image5.jpg" class="gallery__img" alt="Image 5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="imgs/image6.JPG" class="gallery__img" alt="Image 6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                    <img src="imgs/image7.jpg" class="gallery__img" alt="Image 7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                    <img src="imgs/image8.JPG" class="gallery__img" alt="Image 8">
+                </figure>
+                <figure class="gallery__item gallery__item--9">
+                    <img src="imgs/image9.JPG" class="gallery__img" alt="Image 9">
+                </figure>
+            </div>  
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <button class= "open-button" onclick= "openForm()" ondblclick="closeForm()">Let's Work Together!</button> <br> <br>
+        <div class= "form-popup" id = "myForm">
+          <form action="https://formspree.io/f/mgepyraz" method="POST" class= "form-container">
+              <h1>Let's Work Together!</h1><br>
+              <label for= "name"><b>Name</b></label><br>
+                  <input type= "text" id= "name" placeholder= "Enter Full Name" name="name" required><br>
+              <label for= "number"><b>Phone Number</b></label><br>
+                  <input type= "text" id= "number" placeholder= "Enter Phone Number" name="number"><br>
+              <label for= "Email"><b>Email</b></label><br>
+                  <input type= "text" id= "Email" placeholder= "Enter Email" name="Email" required><br>
+              <label for= "Subject"><b>Subject</b></label><br>
+                  <input type= "text" id= "Subject" placeholder= "Enter Subject" name="Subject" required><br>
+              <label for= "Message"><b>Message</b></label><br>
+                  <input type= "text" id= "Message" placeholder= "Enter Message" name="Message" required><br>
+              <button type="submit" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form> <b>
+        </div>
+  
+      <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+      </script>
+  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a aria-label= "LinkedIn" href="https://www.linkedin.com/in/dhiraj-tadikamalla-04040a1a4/" class="fa fa-linkedin"></a> 
+        <a aria-label= "Facebook" href="https://www.facebook.com/dhiraj.tadikamalla/" class="fa fa-facebook"></a>
+        <a aria-label= "Google" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Saying+Hello&to=dhirajtadikamalla@gmail.com" class="fa fa-google" style= "margin: 5px"></a>
+   </footer>
+   </body>
+  </html>
